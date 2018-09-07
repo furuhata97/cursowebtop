@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" class="h-100">
 <head>
     <title>God of War</title>
     <meta charset="utf-8">
@@ -8,64 +8,63 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
-<body>
+<body class="h-100">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-fixed-top"
+     style="padding-top: 0px; font-family: Berserker-Regular">
+    <a class="navbar-brand" href="#">
+        <img src="img/God_of_War/logo.png" style="background: transparent; height: 45px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu"
+            aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-black" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="#noticias">Notícias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="#contato">Contato</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section id="start" style="background: url(img/God_of_War/01.png) no-repeat center center; -webkit-background-size: cover; background-size: cover;">
     <div id="particles-js"></div>
-
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-fixed-top img-responsive" style="background-color: transparent; padding-top: 0px; font-family: Berserker-Regular">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#noticias">Notícias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
-    <div class="bg" id="home">
+    <div id="home">
         <div class="container" style="padding-top: 11%; margin-left:14%">
             <div class="card" style="width: 35%; background-color: transparent; border-color: transparent">
-                <img class="card-img-top img-responsive" src="img/God of War/logo.png" alt="Card image cap">
+                <img class="card-img-top img-responsive" src="img/God_of_War/logo.png" alt="Card image cap">
                 <div class="card-body text-center">
-                    <a class="btn btn-primary" href="https://www.playstation.com/pt-br/games/god-of-war-ps4/buy-now/" role="button" style="font-family: Berserker-Regular">Já disponível</a>
-
+                    <a class="btn btn-primary" href="https://www.playstation.com/pt-br/games/god-of-war-ps4/buy-now/"
+                       role="button" style="font-family: Berserker-Regular">Já disponível</a>
                 </div>
             </div>
         </div>
-
     </div>
-
-    <div class="bg" id="sobre" style="background-image: url(/img/God of War/03.png)"></div>
-
-    <div class="bg" id="noticias" style="background-image: url(/img/God of War/04.png)"></div>
-
-    <div class="bg" id="contato" style="background-image: url(/img/God of War/08.png)"></div>
-
-    <div class="footer bg-dark text-white text-center">
-        <p class="img-responsive" style="font-family: Berserker-Regular; font-size: 12px">"PlayStation" and the "PS" Family logo are registered trademarks of Sony Computer Entertainment Inc. PS3 is a trademark of Sony Interactive Entertainment Inc. © 2017 Sony Interactive Entertainment LLC. God of War is a trademark of Sony Interactive Entertainment LLC.</p>
-    </div>
-    <footer>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
-        <script src="particles.js"></script>
-        <script src="app.js"></script>
-    </footer>
+</section>
+<div id="sobre"></div>
+<div id="noticias"></div>
+<div id="contato"></div>
+<footer class="bg-dark text-white text-center">
+    <p style="font-family: Berserker-Regular; font-size: 12px; margin-bottom: 0;">"PlayStation" and the "PS" Family logo are registered
+        trademarks of Sony Computer Entertainment Inc. PS3 is a trademark of Sony Interactive Entertainment Inc. © 2017
+        Sony Interactive Entertainment LLC. God of War is a trademark of Sony Interactive Entertainment LLC.</p>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

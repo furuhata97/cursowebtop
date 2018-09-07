@@ -4,49 +4,13 @@
 }
 
 body, html {
-  height: 100%;
-  margin: 0;
   font-family: 'Nunito', sans-serif;
 }
-
-.bg {
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#home {
-  background-image: url("../img/God of War/01.png");
-}
-
-#sobre {
-  background-image: url("../img/God of War/03.png");
-}
-
-#noticias {
-  background-image: url("../img/God of War/04.png");
-}
-
-#contato {
-  background-image: url("../img/God of War/08.png");
-}
-
-
-.navbar-fixed-top.scrolled {
-  background-image: url("../img/God of War/logo.png"), linear-gradient(to right, #00cc66 12%, #00ffff 100%);
-  opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 70px;
-  transition: background-image 200ms linear;
-  }
 
 .footer {
   position: relative;
   left: 0;
   bottom: 0;
-  width: 100%;
   height: 5%;
 }
 
@@ -55,41 +19,63 @@ canvas {
   vertical-align: bottom;
 }
 
+#particles-js, #start {
+  height: 100vh;
+  width: 100vw;
+  display: table;
+  table-layout: fixed;
+}
+
 #particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: transparent
-}
-
-
-a{
-	position: relative;
-  	text-decoration: none;
-}
-
-a:hover{
-	color: rgb(135, 27, 27);
-}
-
-a:before{
-  content: "";
   position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
   left: 0;
-  background-color: rgb(135, 27, 27);
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  top: 0;
 }
 
-a:hover:before{
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+#sobre, #noticias, #contato {
+  height: 100%;
 }
 
+#sobre {
+  background: url(../img/God_of_War/03.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#noticias {
+  background: url(../img/God_of_War/04.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#contato {
+  background: url(../img/God_of_War/08.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-fixed-top.scrolled {
+    background: lightskyblue;
+    opacity: 0.8;
+    height: 70px;
+  }
+
+  #navmenu ul li a:hover{
+      color: rgb(135, 27, 27);
+  }
+
+  #navmenu ul li a:hover{
+    border-bottom: 2px solid rgb(135, 27, 27);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-fixed-top {
+    background: lightskyblue;
+    opacity: 0.8;
+    height: 70px;
+  }
+}
