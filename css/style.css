@@ -138,11 +138,11 @@ footer > p {
     height: 70px;
   }
 
-  #navmenu ul li a:hover{
+  #navmenu.navbar-collapse.collapse ul li a:hover{
       color: rgb(135, 27, 27);
   }
 
-  #navmenu ul li a:hover{
+  #navmenu.navbar-collapse.collapse ul li a:hover{
     border-bottom: 2px solid rgb(135, 27, 27);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
@@ -159,3 +159,16 @@ footer > p {
     width: 100% !important;
   }
 }
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.collapse-background {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+}
+
