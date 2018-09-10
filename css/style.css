@@ -3,6 +3,10 @@
     src: url('../fonts/Berserker-Regular.otf');
 }
 
+body {
+    background: #fffafa;
+}
+
 #nav-main {
     top: 0;
     position: fixed;
@@ -75,6 +79,10 @@ img.logoTopo{
     font-family: Verdana;
 }
 
+#home > div.container.boxEsquerdo {
+    margin: 0;
+}
+
 .infoTopo{
     width: 40%;
     background-color: transparent;
@@ -113,7 +121,7 @@ img.logoTopo{
 /* Configura o Sobre*/
 
 #about{
-    background: url(../img/God_of_War/sobre.png) no-repeat center center;
+    /*background: url(../img/God_of_War/sobre.png) no-repeat center center;*/
     -webkit-background-size: cover;
     background-size: cover;
     font-family: Berserker-Regular;
@@ -185,6 +193,9 @@ width: 100%;
 height: auto;
 }
 
+#carouselControls {
+    margin: 0 auto;
+}
 
 /* Configura o Novidades*/
 #news{
@@ -196,7 +207,12 @@ height: auto;
 
 #carouselControls{
     padding-top: 10%;
-    margin-left: 10%;
+}
+
+.novidades {
+    background: transparent;
+    border-color: transparent;
+    padding-top: 250px;
 }
 
 .sideBySide {
@@ -211,7 +227,6 @@ height: auto;
 }
 
 .contact-form{
-    background: #fff;
     width: 100%;
 }
 .contact-form .form-control{
