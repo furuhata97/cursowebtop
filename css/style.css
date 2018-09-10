@@ -79,17 +79,17 @@ img.logoTopo{
 
 .boxEsquerdo{
     padding-top: 5%;
-    margin-left: 10%;
+    padding-left: 10%;
 }
 
 .boxDireito{
     padding-top: 5%;
-    margin-left: 10%;
+    padding-left: 10%;
 }
 
 /* Configura o Particle JS */
 
-#particles-js, #start, #about, #news {
+#particles-js, #particles-js2, #particles-js3, #start, #about, #news {
     height: 100vh;
     width: 100vw;
     display: table;
@@ -100,6 +100,10 @@ img.logoTopo{
     position: absolute;
     left: 0;
     top: 0;
+}
+
+#particles-js2, #particles-js3 {
+    position: absolute;
 }
 
 /* Configura o Sobre*/
