@@ -62,6 +62,10 @@ img.logoTopo{
     opacity: 0.8;
 }
 
+.border-text{
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff
+}
+
 /* Configura a Home */
 
 #start{
@@ -115,6 +119,73 @@ img.logoTopo{
     font-family: Berserker-Regular;
 }
 
+.boxTopo{
+    padding-top: 5%;
+    margin: 0 auto;
+}
+
+.about-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%
+}
+
+.about-title {
+    margin-bottom: 50px; 
+    font-size: 30px
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: auto;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);  
+}
+
+.front img{
+    border-radius:1rem;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.responsive-img{
+width: 100%;
+height: auto;
+}
+
+
 /* Configura o Novidades*/
 #news{
     background: url(../img/God_of_War/novidades.png) no-repeat center center;
@@ -128,6 +199,11 @@ img.logoTopo{
     margin-left: 10%;
 }
 
+.sideBySide {
+    width: 100%; 
+    overflow: hidden;
+}
+
 /* Estilização do Formulário de Contato */
 
 #contato {
@@ -139,13 +215,13 @@ img.logoTopo{
     width: 100%;
 }
 .contact-form .form-control{
-    border-radius:1rem;
+    /*border-radius:1rem;*/
 }
 .contact-image{
     text-align: center;
 }
 .contact-image img{
-    border-radius: 6rem;
+    /*border-radius: 6rem;*/
     width: 11%;
     margin-top: -3%;
 }
@@ -164,7 +240,7 @@ img.logoTopo{
 .contact-form .btnContact {
     width: 50%;
     border: none;
-    border-radius: 1rem;
+    /*border-radius: 1rem;*/
     padding: 1.5%;
     background: #98140d;
     font-weight: 600;
@@ -178,7 +254,7 @@ img.logoTopo{
 }
 
 .mapa{
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 
 /* Estilização do Footer */
@@ -206,18 +282,18 @@ footer{
     .mapa{
         width: 500px;
         height: 370px;
-        border-radius: 20px;
+        /*border-radius: 20px;*/
     }
 
     #carouselControls{
         width: 450px;
     }
 
-    #navmenu.navbar-collapse.collapse ul li a:hover{
+    #navmenu ul li a:hover{
         color: #98140d;
     }
 
-    #navmenu.navbar-collapse.collapse ul li a:hover{
+    #navmenu ul li a:hover{
         border-bottom: 2px solid #98140d;
         -webkit-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
