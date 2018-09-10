@@ -216,6 +216,7 @@ height: auto;
 }
 
 .sideBySide {
+    padding-top: 10%;
     width: 100%; 
     overflow: hidden;
 }
@@ -230,19 +231,22 @@ height: auto;
     width: 100%;
 }
 .contact-form .form-control{
-    /*border-radius:1rem;*/
+    border-radius:1rem;
 }
 .contact-image{
     text-align: center;
 }
 .contact-image img{
-    /*border-radius: 6rem;*/
+    border-radius: 6rem;
     width: 11%;
     margin-top: -3%;
+    background-color: #fffafa;
 }
+
 .contact-form form{
-    padding: 14%;
+    padding-top: 14%;
 }
+
 .contact-form form .row{
     margin-bottom: -7%;
 }
@@ -255,7 +259,7 @@ height: auto;
 .contact-form .btnContact {
     width: 50%;
     border: none;
-    /*border-radius: 1rem;*/
+    border-radius: 1rem;
     padding: 1.5%;
     background: #98140d;
     font-weight: 600;
@@ -269,7 +273,7 @@ height: auto;
 }
 
 .mapa{
-    /*border-radius: 20px;*/
+    border-radius: 20px;
 }
 
 /* Estilização do Footer */
